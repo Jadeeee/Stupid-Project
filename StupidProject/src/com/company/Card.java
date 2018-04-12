@@ -56,6 +56,6 @@ public class Card {
     }
 
     public String GetCardName() {
-        return displayValue
+        return displayValue;
     }
 }
