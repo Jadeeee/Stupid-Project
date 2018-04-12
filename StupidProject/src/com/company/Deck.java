@@ -56,8 +56,16 @@ public class Deck {
 
     public void ShuffleAll() {
         for (int i = 0; i < discardPile.size(); i++) {
-
+            remainingCards.add(discardPile.get(i));
         }
+        discardPile.clear();
+        ShuffleRemaining();
+    }
+
+    public void ResetAndShuffle() {
+        ClearDeck();
+        InitializeDeck();
+        ShuffleRemaining();
     }
 }
 
