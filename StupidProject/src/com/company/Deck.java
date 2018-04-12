@@ -21,13 +21,9 @@ public class Deck {
         InitializeDeck();
     }
 
-    public int GetNumCardsDeck() {
-        return remainingCards.size();
-    }
+    public int GetNumCardsDeck() { return remainingCards.size(); }
 
-    public int GetNumCardsTotal() {
-        return remainingCards.size() + discardPile.size();
-    }
+    public int GetNumCardsTotal() { return remainingCards.size() + discardPile.size(); }
 
     public Card DrawCard() {
         Card topCard = new Card(0, "null");
@@ -41,9 +37,7 @@ public class Deck {
         return topCard;
     }
 
-    public void DiscardCard(Card card) {
-        discardPile.add(card);
-    }
+    public void DiscardCard(Card card) { discardPile.add(card); }
 
     public void AddCardToDeck(Card card) {
         remainingCards.add(card);
@@ -57,6 +51,12 @@ public class Deck {
             Card shuffledCard = remainingCards.get(randNum);
             remainingCards.set(randNum, remainingCards.get(shuffleNumber));
             remainingCards.set(shuffleNumber, shuffledCard);
+        }
+    }
+
+    public void ShuffleAll() {
+        for (int i = 0; i < discardPile.size(); i++) {
+
         }
     }
 }
