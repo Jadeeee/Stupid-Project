@@ -25,7 +25,7 @@ public class Deck {
 
     public int GetNumCardsTotal() { return remainingCards.size() + discardPile.size(); }
 
-    public Card DrawCard() {
+    public Card DrawCard() {*
         Card topCard = new Card(0, "null");
         if (remainingCards.size() != 0) {
             topCard = remainingCards.get(0);
@@ -67,5 +67,18 @@ public class Deck {
         InitializeDeck();
         ShuffleRemaining();
     }
-}
 
+    public void ClearDeck() {
+        remainingCards.clear();
+        discardPile.clear();
+    }
+
+    private void InitializeDeck() {
+        String[] suitArray = new String[] {"spades", "hearts", "clubs", "diamonds"};
+        for (int suitCount = 0; suitCount < 4; suitCount++) {
+            for (int value = 2; value < 15; value++) {
+                remainingCards.add(new Card(value, suitArray[suitCount]));
+            }
+        }
+    }
+}
