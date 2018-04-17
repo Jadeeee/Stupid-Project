@@ -5,5 +5,5 @@ package com.company;
  */
 public class Player {
     private Hand playerHand;
-    
+
 }
