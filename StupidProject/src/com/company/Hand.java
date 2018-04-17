@@ -1,17 +1,22 @@
 package com.company;
 
+import java.util.ArrayList;
+
 /**
  * Created by jburke on 3/26/2018.
  */
 public class Hand {
+    private ArrayList<Card> playerCards;
 
-    //list o cards
+    public Hand {
+        playerCards = new ArrayList<>();
+    }
 
-    //constructor
+    public void AddCardToHand(Card card) {
+        playerCards.add(card);
+    }
 
-    //make method that adds card to hand
-
-    //get cards
-
-
+    public ArrayList<Card> GetCards() {
+        return playerCards;
+    }
 }

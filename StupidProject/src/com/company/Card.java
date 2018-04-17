@@ -20,7 +20,6 @@ public class Card {
         if (Value > 1 && Value < 14) {
             value = Value;
             if (value == 11) {
-
                 displayValue = "J";
             }
             else if (value == 12) {
