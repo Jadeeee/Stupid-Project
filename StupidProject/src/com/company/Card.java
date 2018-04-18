@@ -13,10 +13,10 @@ public class Card {
 
     public Card(int Value, String Suit) {
         suitList = new ArrayList<String>();
-        suitList.add("spades");
+        suitList.add("eldoon spades");
         suitList.add("hearts");
         suitList.add("clubs");
-        suitList.add("diamonds");
+        suitList.add("diamond eldoon");
         if (Value > 1 && Value < 14) {
             value = Value;
             if (value == 11) {
