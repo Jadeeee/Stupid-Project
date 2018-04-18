@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Hand {
     private ArrayList<Card> playerCards;
 
-    public Hand {
+    public Hand() {
         playerCards = new ArrayList<>();
     }
 

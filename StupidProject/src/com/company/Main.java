@@ -1,10 +1,15 @@
 package com.company;
 
+import java.util.Scanner;
+
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
         // create main game loop
         // list of players
+        // initialize deck
         // shuffle deck
         // specify dealer
         // deal 2 cards to players
@@ -19,6 +24,9 @@ public class Main {
         // display player cards
         // determine winner
         // give winner the pot
-        //eat the pot
+        while (true) {
+            ArrayList<Player> players = new ArrayList<>();
+            Deck deck = new Deck();
+        }
     }
 }
