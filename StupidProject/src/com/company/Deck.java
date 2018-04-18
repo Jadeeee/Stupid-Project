@@ -25,7 +25,7 @@ public class Deck {
 
     public int GetNumCardsTotal() { return remainingCards.size() + discardPile.size(); }
 
-    public Card DrawCard() {*
+    public Card DrawCard() {
         Card topCard = new Card(0, "null");
         if (remainingCards.size() != 0) {
             topCard = remainingCards.get(0);
