@@ -19,5 +19,6 @@ public class Main {
         // display player cards
         // determine winner
         // give winner the pot
+        //eat the pot
     }
 }
